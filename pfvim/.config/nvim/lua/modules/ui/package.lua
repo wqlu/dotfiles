@@ -5,9 +5,14 @@
 local package = require('core.pack').package
 local conf = require('modules.ui.config')
 
-package({ 'sainnhe/gruvbox-material', config = conf.gruvbox })
+package({
+  'sainnhe/gruvbox-material',
+  config = conf.gruvbox,
+})
 
-package({ 'xiyaowong/nvim-transparent', config = conf.transparent })
+package({ 'xiyaowong/nvim-transparent',
+config = conf.transparent,
+})
 
 package({
   'glepnir/galaxyline.nvim',
