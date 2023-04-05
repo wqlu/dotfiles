@@ -29,12 +29,6 @@ package({
 })
 
 package({
-  'kdheepak/tabline.nvim',
-  config = conf.tabline,
-  dependencies = 'kyazdani42/nvim-web-devicons'
-})
-
-package({
   'lukas-reineke/indent-blankline.nvim',
   config = conf.indent_blankline
 })
