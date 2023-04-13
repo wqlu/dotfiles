@@ -16,3 +16,7 @@ package({
   },
 })
 
+package({
+  'numToStr/Comment.nvim',
+  config = conf.comment,
+})

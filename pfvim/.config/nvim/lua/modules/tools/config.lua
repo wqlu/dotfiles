@@ -44,4 +44,7 @@ function config.telescope()
   require('telescope').load_extension('file_browser')
 end
 
+function config.comment()
+  require('Comment').setup({})
+end
 return config

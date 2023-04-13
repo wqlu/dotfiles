@@ -34,13 +34,19 @@ function pack:boot_strap()
   local lazy_path = self.helper.path_join(self.data_path, 'lazy', 'lazy.nvim')
   local state = uv.fs_stat(lazy_path)
   if not state then
-    local cmd = '!git clone https://github.com/folke/lazy.nvim ' .. lazy_path
+    local cmd = '!git clone git@github.com:folke/lazy.nvim ' .. lazy_path
     api.nvim_command(cmd)
   end
   vim.opt.runtimepath:prepend(lazy_path)
   local lazy = require('lazy')
   local opts = {
     lockfile = self.helper.path_join(self.data_path, 'lazy-lock.json'),
+    git = {
+      log = { "--since=3 days ago" }, -- show commits from the last 3 days
+      timeout = 120, -- kill processes that take more than 2 minutes
+      url_format = "git@github.com:%s.git",
+      filter = true,
+    }
   }
   self:load_modules_packages()
   lazy.setup(self.repos, opts)
