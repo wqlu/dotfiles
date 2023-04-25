@@ -7,7 +7,7 @@ function config.nvim_treesitter()
     ensure_installed = {
       'lua',
       'cpp',
-      'js',
+      'javascript',
     },
     ignore_install = { 'phpdoc' },
     highlight = {
