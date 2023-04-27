@@ -19,13 +19,25 @@ nmap({
   -- dashboard
   { '<Leader>ss', cmd('SessionSave'), opts(noremap, silent) },
   { '<Leader>sl', cmd('SessionLoad'), opts(noremap, silent) },
-  -- nvimtree
+    -- nvimtree
   { '<Leader>e', cmd('NvimTreeToggle'), opts(noremap, silent) },
   -- Telescope
   { '<Leader>b', cmd('Telescope buffers'), opts(noremap, silent) },
-  { '<Leader>fa', cmd('Telescope live_grep'), opts(noremap, silent) },
+  { '<Leader>fg', cmd('Telescope live_grep'), opts(noremap, silent) },
   { '<Leader>ff', cmd('Telescope find_files'), opts(noremap, silent) },
   { '<Leader>fb', cmd('Telescope file_browser'), opts(noremap, silent) },
+  -- window split
+  { '<C-w>\\', cmd(':vsplit<Return><C-w>w'), opts(noremap, silent) },
+  { '<C-w>-', cmd(':split<Return><C-w>w'), opts(noremap, silent) },
+  -- window resize
+  { '<M-h>', '<C-w>>', opts(noremap, silent) },
+  { '<M-l>', '<C-w><', opts(noremap, silent) },
+  { '<M-j>', '<C-w>-', opts(noremap, silent) },
+  { '<M-k>', '<C-w>+', opts(noremap, silent) },
+  -- window move
+  { '<space>', '<C-w>w', opts(noremap, silent) },
+  -- save file
+  { '<C-s>', cmd(':w'), opts(noremap, silent) }
 })
 
 

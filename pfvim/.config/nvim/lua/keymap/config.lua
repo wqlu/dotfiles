@@ -9,8 +9,8 @@ local silent, noremap = keymap.silent, keymap.noremap
 local opts = keymap.new_opts
 local cmd = keymap.cmd
 
--- Use space as leader key
-vim.g.mapleader = ' '
+-- Use / as leader key
+vim.g.mapleader = '/'
 
 -- leaderkey
 nmap({ ' ', '', opts(noremap) })
