@@ -15,8 +15,9 @@ function config.transparent()
       'Normal', 'NormalFloat', 'NormalNC', 'Comment', 'Constant', 'Special', 'Identifier',
       'Statement', 'PreProc', 'Type', 'Underlined', 'Todo', 'String', 'Function',
       'Conditional', 'Repeat', 'Operator', 'Structure', 'LineNr', 'NonText',
-      'SignColumn', 'CursorLineNr', 'EndOfBuffer', 'StatusLine', 'PMenu',
-      'FloatBorder', 'TermCursor',
+      'SignColumn', 'CursorLineNr', 'CursorColumn', 'EndOfBuffer', 'StatusLine', 'StatusLineNC','PMenu',
+      'FloatBorder', 'TermCursor', 'NvimTreeCursorLine', 'NvimTreeVertSplit', 'NvimTreeSignColumn',
+      'NvimTreeNormal', 'NvimTreeEndOfBuffer'
     },
     extra_groups = {}, -- table: additional groups that should be cleared
     exclude_groups = {}, -- table: groups you don't want to clear
