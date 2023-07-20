@@ -28,14 +28,6 @@ function config.galaxyline()
   require('modules.ui.eviline')
 end
 
-function config.nvim_tree()
-  require('nvim-tree').setup({
-    disable_netrw = false,
-    hijack_cursor = true,
-    hijack_netrw = true,
-  })
-end
-
 function config.indent_blankline()
   require('indent_blankline').setup({
     show_end_of_line = true,

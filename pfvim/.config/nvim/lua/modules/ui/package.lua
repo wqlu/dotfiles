@@ -22,13 +22,6 @@ package({
 })
 
 package({
-  'kyazdani42/nvim-tree.lua',
-  cmd = 'NvimTreeToggle',
-  config = conf.nvim_tree,
-  dependencies = 'kyazdani42/nvim-web-devicons',
-})
-
-package({
   'lukas-reineke/indent-blankline.nvim',
   config = conf.indent_blankline
 })

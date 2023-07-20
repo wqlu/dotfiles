@@ -14,30 +14,31 @@ local cmd = key.cmd
 -- usage of plugins
 nmap({
   -- packer
-  { '<Leader>pu', cmd('Lazy update'), opts(noremap, silent) },
-  { '<Leader>pi', cmd('Lazy install'), opts(noremap, silent) },
+  { '<Leader>p', cmd('Lazy'), opts(noremap, silent) },
   -- dashboard
   { '<Leader>ss', cmd('SessionSave'), opts(noremap, silent) },
   { '<Leader>sl', cmd('SessionLoad'), opts(noremap, silent) },
-    -- nvimtree
-  { '<Leader>e', cmd('NvimTreeToggle'), opts(noremap, silent) },
   -- Telescope
   { '<Leader>b', cmd('Telescope buffers'), opts(noremap, silent) },
   { '<Leader>fg', cmd('Telescope live_grep'), opts(noremap, silent) },
   { '<Leader>ff', cmd('Telescope find_files'), opts(noremap, silent) },
-  { '<Leader>fb', cmd('Telescope file_browser'), opts(noremap, silent) },
+  { '<Leader>e', cmd('Telescope file_browser'), opts(noremap, silent) },
   -- window split
-  { '<C-w>\\', cmd(':vsplit<Return><C-w>w'), opts(noremap, silent) },
-  { '<C-w>-', cmd(':split<Return><C-w>w'), opts(noremap, silent) },
+  { '<C-x>\\', cmd(':vsplit<Return><C-w>w'), opts(noremap, silent) },
+  { '<C-x>-', cmd(':split<Return><C-w>w'), opts(noremap, silent) },
   -- window resize
-  { '<M-h>', '<C-w>>', opts(noremap, silent) },
-  { '<M-l>', '<C-w><', opts(noremap, silent) },
-  { '<M-j>', '<C-w>-', opts(noremap, silent) },
-  { '<M-k>', '<C-w>+', opts(noremap, silent) },
+  { '<C-a>', '<C-w>>', opts(noremap, silent) },
+  { '<C-f>', '<C-w><', opts(noremap, silent) },
+  { '<C-d>', '<C-w>-', opts(noremap, silent) },
+  { '<C-s>', '<C-w>+', opts(noremap, silent) },
   -- window move
   { '<space>', '<C-w>w', opts(noremap, silent) },
+  { '<C-h>', '<C-w>h', opts(noremap, silent) },
+  { '<C-j>', '<C-w>j', opts(noremap, silent) },
+  { '<C-k>', '<C-w>k', opts(noremap, silent) },
+  { '<C-l>', '<C-w>l', opts(noremap, silent) },
   -- save file
-  { '<C-s>', cmd(':w'), opts(noremap, silent) }
+  -- { '<C-s>', cmd(':w'), opts(noremap, silent) }
 })
 
 
