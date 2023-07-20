@@ -46,7 +46,10 @@ function pack:boot_strap()
       timeout = 120, -- kill processes that take more than 2 minutes
       url_format = "git@github.com:%s.git",
       filter = true,
-    }
+    },
+    ui = {
+      border = 'rounded',
+    },
   }
   self:load_modules_packages()
   lazy.setup(self.repos, opts)
