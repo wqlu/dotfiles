@@ -20,3 +20,8 @@ package({
   'numToStr/Comment.nvim',
   config = conf.comment,
 })
+
+package({
+  'lewis6991/gitsigns.nvim',
+  config = conf.gitsigns,
+})

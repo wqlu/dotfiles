@@ -47,4 +47,9 @@ end
 function config.comment()
   require('Comment').setup({})
 end
+
+function config.gitsigns()
+  require('gitsigns').setup()
+end
+
 return config
