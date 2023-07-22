@@ -18,11 +18,13 @@ nmap({
   -- dashboard
   { '<Leader>ss', cmd('SessionSave'), opts(noremap, silent) },
   { '<Leader>sl', cmd('SessionLoad'), opts(noremap, silent) },
+    -- nvimtree
+  { '<Leader>e', cmd('NvimTreeToggle'), opts(noremap, silent) },
   -- Telescope
   { '<Leader>b', cmd('Telescope buffers'), opts(noremap, silent) },
   { '<Leader>fg', cmd('Telescope live_grep'), opts(noremap, silent) },
   { '<Leader>ff', cmd('Telescope find_files'), opts(noremap, silent) },
-  { '<Leader>e', cmd('Telescope file_browser'), opts(noremap, silent) },
+  { '<Leader>fb', cmd('Telescope file_browser'), opts(noremap, silent) },
   -- window split
   { '<C-x>\\', cmd(':vsplit<Return><C-w>w'), opts(noremap, silent) },
   { '<C-x>-', cmd(':split<Return><C-w>w'), opts(noremap, silent) },

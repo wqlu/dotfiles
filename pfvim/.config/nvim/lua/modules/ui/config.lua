@@ -34,4 +34,12 @@ function config.indent_blankline()
   })
 end
 
+function config.nvim_tree()
+  require('nvim-tree').setup({
+    disable_netrw = false,
+    hijack_cursor = true,
+    hijack_netrw = true,
+  })
+end
+
 return config
