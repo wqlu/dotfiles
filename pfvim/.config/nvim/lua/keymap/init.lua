@@ -41,6 +41,8 @@ nmap({
   { '<C-l>', '<C-w>l', opts(noremap, silent) },
   -- save file
   -- { '<C-s>', cmd(':w'), opts(noremap, silent) }
+  -- Lspsaga
+  { '<F12>', cmd('Lspsaga goto_definition'), opts(noremap, silent) }
 })
 
 
