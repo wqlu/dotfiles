@@ -43,7 +43,7 @@ function pack:boot_strap()
     lockfile = self.helper.path_join(self.data_path, 'lazy-lock.json'),
     git = {
       log = { "--since=3 days ago" }, -- show commits from the last 3 days
-      timeout = 120, -- kill processes that take more than 2 minutes
+      timeout = 120,                  -- kill processes that take more than 2 minutes
       url_format = "git@github.com:%s.git",
       filter = true,
     },
