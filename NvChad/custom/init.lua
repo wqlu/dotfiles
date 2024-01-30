@@ -5,3 +5,5 @@
 --   pattern = "*",
 --   command = "tabdo wincmd =",
 -- })
+-- nvim-cmp max window height
+vim.o.pumheight = 15;
