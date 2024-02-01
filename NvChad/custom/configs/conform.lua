@@ -9,6 +9,7 @@ local options = {
     html = { "prettier" },
 
     sh = { "shfmt" },
+    rs = { "rustfmt" },
   },
 
   -- adding same formatter for multiple filetypes can look too much work for some
